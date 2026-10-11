@@ -37,6 +37,7 @@ The reduced files illustrate the required input formats and can be used to test 
 
 Reproducing the published analyses requires replacing these subsets with the complete genotype datasets provided in the publication’s supplementary tables.
 
+
 ### Expression stages and genes
 
 `TimeCourse1` must be one of: `04 dpa`, `6-10 dpa`, `11-15 dpa`, `16-20 dpa`, `21-25 dpa`, `26-30 dpa`, `35 dpa`. Plot positions are respectively 4, 8, 13, 18, 23, 28 and 35 days post anthesis; these are display midpoints for grouped stages.
