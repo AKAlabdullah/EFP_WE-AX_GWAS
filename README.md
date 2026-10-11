@@ -43,6 +43,15 @@ Section 07 has two IDs: **07a** (conversion/diagnostics) and **07b** (simulation
 | `FIGURE_MAP.md` | Figure panels, filenames and external assembly steps |
 | `vendor/gapit_functions.txt` | Included GAPIT source, internally reporting version 4.1 |
 | `vendor/gapit_README.md` and licence texts | GAPIT provenance, attribution and licence notices |
+| `inputs/EliteFibrePanel_phenotyping_for_plotting.csv` | input file
+| `inputs/EliteFibrePanel_phenotyping.csv` | Input file
+| `inputs/EFP_genotypes_AxiomTaNG1_KASP_sb_hmp.txt` | Input file
+| `inputs/EFP_genotypes_AxiomTaNG1_KASP_db_hmp.txt` | Input file
+| `outputs/GWAS/AlleleFrequency/1_SigSNPs_to_calculate_allele_frequency.csv` | Input file (manually prepared CSV) 
+| `outputs/GWAS/AlleleFrequency/4_SigMarkers_allele_frequency_for_plotting.csv` | Input file (manually prepared CSV)
+| `outputs/GWAS/AlleleFrequency/5_for_HFA_counting_per_EFP_line.csv` | Input file (manually prepared CSV)
+| `outputs/GWAS/AlleleFrequency/7_HFA_counts_per_EFP_line_with_average_Xylose.csv` | Input file (manually prepared CSV)
+| `outputs/GWAS/Candidate_genes/Expression_time_course_data.csv` | Input file (manually prepared CSV)
 
 | Section | Analysis | Direct packages / software | Figure connection |
 |---|---|---|---|
@@ -64,6 +73,14 @@ Section 07 has two IDs: **07a** (conversion/diagnostics) and **07b** (simulation
 | 15 | Original chromosome heatmap / decay layout | snpStats, ggplot2, scales | S6–S7 in supplied slides |
 | 16 | Lead-marker intervals and corrected LD workflow | snpStats, ggplot2, gridExtra, scales | 6; alternative S6–S7 |
 | 17 | Expression time courses | dplyr, tidyr, readr, tibble, ggplot2 | 7 |
+
+**Note on the genotype input files**
+
+To reduce file sizes for upload to GitHub, `EFP_genotypes_AxiomTaNG1_KASP_db_hmp.txt` and `EFP_genotypes_AxiomTaNG1_KASP_sb_hmp.txt` include genotypic data for **chromosomes 1A and 1B only**. These are reduced demonstration datasets; the analyses reported in the paper used the complete genome-wide genotype datasets.
+
+The reduced files illustrate the required input formats and can be used to test applicable parts of the workflow. They **cannot reproduce the full results reported in the paper**, and sections requiring markers on other chromosomes cannot be completed using these subsets. The significance threshold specified in the code relates to the full study dataset and has not been recalculated for these reduced files.
+
+Reproducing the published analyses requires replacing these subsets with the complete genotype datasets provided in the publication’s supplementary tables.
 
 ## Packages and GAPIT
 
