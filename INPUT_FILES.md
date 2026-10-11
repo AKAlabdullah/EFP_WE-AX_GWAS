@@ -28,6 +28,15 @@ Rows are markers; columns 12 onward are samples. The standard metadata sequence 
 
 The A/B/D subgenomes are represented as diploid, locus-specific markers in this analysis. Do not substitute hexaploid allele dosage 0–6 into the numerical genotype file.
 
+
+**Note on the genotype input files**
+
+To reduce file sizes for upload to GitHub, `EFP_genotypes_AxiomTaNG1_KASP_db_hmp.txt` and `EFP_genotypes_AxiomTaNG1_KASP_sb_hmp.txt` include genotypic data for **chromosomes 1A and 1B only**. These are reduced demonstration datasets; the analyses reported in the paper used the complete genome-wide genotype datasets.
+
+The reduced files illustrate the required input formats and can be used to test applicable parts of the workflow. They **cannot reproduce the full results reported in the paper**, and sections requiring markers on other chromosomes cannot be completed using these subsets. The significance threshold specified in the code relates to the full study dataset and has not been recalculated for these reduced files.
+
+Reproducing the published analyses requires replacing these subsets with the complete genotype datasets provided in the publication’s supplementary tables.
+
 ### Expression stages and genes
 
 `TimeCourse1` must be one of: `04 dpa`, `6-10 dpa`, `11-15 dpa`, `16-20 dpa`, `21-25 dpa`, `26-30 dpa`, `35 dpa`. Plot positions are respectively 4, 8, 13, 18, 23, 28 and 35 days post anthesis; these are display midpoints for grouped stages.
