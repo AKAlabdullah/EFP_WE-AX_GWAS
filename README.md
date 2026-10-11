@@ -74,6 +74,7 @@ Section 07 has two IDs: **07a** (conversion/diagnostics) and **07b** (simulation
 | 16 | Lead-marker intervals and corrected LD workflow | snpStats, ggplot2, gridExtra, scales | 6; alternative S6–S7 |
 | 17 | Expression time courses | dplyr, tidyr, readr, tibble, ggplot2 | 7 |
 
+
 **Note on the genotype input files**
 
 To reduce file sizes for upload to GitHub, `EFP_genotypes_AxiomTaNG1_KASP_db_hmp.txt` and `EFP_genotypes_AxiomTaNG1_KASP_sb_hmp.txt` include genotypic data for **chromosomes 1A and 1B only**. These are reduced demonstration datasets; the analyses reported in the paper used the complete genome-wide genotype datasets.
