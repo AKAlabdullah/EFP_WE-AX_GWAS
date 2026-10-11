@@ -1,4 +1,4 @@
-# EFP analysis code for GitHub and Zenodo
+# EFP analysis code for GitHub
 # Genetic architecture of soluble arabinoxylan fibre in elite genotypes of
 # bread wheat revealed by genome-wide association analysis
 # Author of the study code: Abdul Kader Alabdullah, John Innes Centre
