@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "Please cite this software release and the associated EFP paper."
+title: "EFP wheat fibre GWAS analysis code"
+type: software
+version: "1.0.3"
+repository-code: "https://github.com/AKAlabdullah/EFP_WE-AX_GWAS"
+authors:
+  - family-names: "Alabdullah"
+    given-names: "Abdul Kader"
+    affiliation: "John Innes Centre"
+abstract: >-
+  R analysis code for the Elite Fibre Panel study of water-extractable
+  arabinoxylan in bread wheat, including phenotype analysis, SNP quality
+  control, GWAS, allele effects, linkage disequilibrium and expression figures.
+keywords:
+  - wheat
+  - arabinoxylan
+  - GWAS
+  - linkage disequilibrium
+  - reproducible research
